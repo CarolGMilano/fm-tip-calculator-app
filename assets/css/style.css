@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+body {
+  background-color: hsl(185deg, 41%, 84%);
+  font-family: "Space Mono", monospace;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.header {
+  margin: 3rem 0;
+}
+.header .header__title {
+  color: hsl(186deg, 14%, 43%);
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 0.6rem;
+  margin: 0 auto;
+  width: 100px;
+}
+
+@media screen and (min-width: 800px) {
+  .header {
+    margin-top: 5%;
+  }
+}
+.main__calculator {
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 25px;
+  padding: 2rem;
+  overflow: hidden;
+}
+.main__calculator .calculator__header {
+  margin-bottom: 2rem;
+}
+.main__calculator .calculator__header .header__title {
+  font-size: 16px;
+  color: hsl(186deg, 14%, 43%);
+  margin-bottom: 0.3rem;
+}
+.main__calculator .calculator__header .header__inputBill {
+  background: url("../img/icon-dollar.svg") no-repeat center left 15px, hsl(180deg, 7%, 94%);
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 0.8rem 1.2rem 0.8rem 2rem;
+  border-radius: 5px;
+  text-align: end;
+  font-family: "Space Mono", monospace;
+  font-size: 20px;
+  color: hsl(183deg, 100%, 15%);
+}
+.main__calculator .calculator__header .header__inputBill::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+          appearance: none;
+}
+.main__calculator .calculator__header .header__inputBill::-moz-placeholder {
+  opacity: 0.6;
+}
+.main__calculator .calculator__header .header__inputBill:-ms-input-placeholder {
+  opacity: 0.6;
+}
+.main__calculator .calculator__header .header__inputBill::placeholder {
+  opacity: 0.6;
+}
+.main__calculator .calculator__header .header__inputBill:focus {
+  border: 1px solid hsl(172deg, 67%, 45%);
+}
+.main__calculator .calculator__tips {
+  margin-bottom: 2rem;
+}
+.main__calculator .calculator__tips .tips__title {
+  color: hsl(186deg, 14%, 43%);
+  font-size: 16px;
+  margin-bottom: 0.5rem;
+}
+.main__calculator .calculator__tips .tips__percent {
+  flex-basis: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+}
+.main__calculator .calculator__tips .tips__percent .percent__label-check {
+  text-align: center;
+  flex-grow: 1;
+  width: 100px;
+  background-color: hsl(183deg, 100%, 15%);
+  padding: 0.5rem 0;
+  border-radius: 5px;
+  color: hsl(0deg, 0%, 100%);
+  font-size: 22px;
+  transition: 0.3s;
+}
+.main__calculator .calculator__tips .tips__percent .percent__label-check:hover {
+  color: hsl(183deg, 100%, 15%);
+  background-color: hsl(185deg, 41%, 84%);
+}
+.main__calculator .calculator__tips .tips__percent .percent__checkbox {
+  position: absolute;
+  left: -9999px;
+}
+.main__calculator .calculator__tips .tips__percent .percent__custom {
+  flex-grow: 1;
+  width: 100px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: hsl(180deg, 7%, 94%);
+  padding: 0 1rem;
+  text-align: end;
+  font-family: "Space Mono", monospace;
+  font-size: 24px;
+  color: hsl(183deg, 100%, 15%);
+}
+.main__calculator .calculator__tips .tips__percent .percent__custom::-moz-placeholder {
+  text-align: end;
+  font-family: "Space Mono", monospace;
+  font-size: 24px;
+  opacity: 0.6;
+}
+.main__calculator .calculator__tips .tips__percent .percent__custom:-ms-input-placeholder {
+  text-align: end;
+  font-family: "Space Mono", monospace;
+  font-size: 24px;
+  opacity: 0.6;
+}
+.main__calculator .calculator__tips .tips__percent .percent__custom::placeholder {
+  text-align: end;
+  font-family: "Space Mono", monospace;
+  font-size: 24px;
+  opacity: 0.6;
+}
+.main__calculator .calculator__tips .tips__percent .percent__custom::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+          appearance: none;
+}
+.main__calculator .calculator__tips .tips__percent .percent__custom:focus {
+  border: 1px solid hsl(172deg, 67%, 45%);
+}
+.main__calculator .calculator__people {
+  margin-bottom: 2rem;
+}
+.main__calculator .calculator__people .people__title {
+  color: hsl(186deg, 14%, 43%);
+  font-size: 16px;
+  margin-bottom: 0.5rem;
+}
+.main__calculator .calculator__people .people__input {
+  background: url("../img/icon-person.svg") no-repeat center left 15px, hsl(180deg, 7%, 94%);
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 0.8rem 1.2rem 0.8rem 2rem;
+  border-radius: 5px;
+  text-align: end;
+  font-family: "Space Mono", monospace;
+  font-size: 20px;
+  color: hsl(183deg, 100%, 15%);
+}
+.main__calculator .calculator__people .people__input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+          appearance: none;
+}
+.main__calculator .calculator__people .people__input::-moz-placeholder {
+  opacity: 0.6;
+}
+.main__calculator .calculator__people .people__input:-ms-input-placeholder {
+  opacity: 0.6;
+}
+.main__calculator .calculator__people .people__input::placeholder {
+  opacity: 0.6;
+}
+.main__calculator .calculator__people .people__input:focus {
+  border: 1px solid hsl(172deg, 67%, 45%);
+}
+.main__calculator .calculator__view {
+  background-color: hsl(183deg, 100%, 15%);
+  border-radius: 15px;
+  padding: 2rem 1.5rem;
+}
+.main__calculator .calculator__view .view__amount,
+.main__calculator .calculator__view .view__total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.main__calculator .calculator__view .view__amount .amount__title,
+.main__calculator .calculator__view .view__amount .total__title,
+.main__calculator .calculator__view .view__total .amount__title,
+.main__calculator .calculator__view .view__total .total__title {
+  display: flex;
+  flex-direction: column;
+  color: hsl(0deg, 0%, 100%);
+  font-size: 16px;
+}
+.main__calculator .calculator__view .view__amount .amount__title .title__person,
+.main__calculator .calculator__view .view__amount .total__title .title__person,
+.main__calculator .calculator__view .view__total .amount__title .title__person,
+.main__calculator .calculator__view .view__total .total__title .title__person {
+  color: hsl(184deg, 14%, 56%);
+  font-size: 14px;
+}
+.main__calculator .calculator__view .view__amount .amount__price,
+.main__calculator .calculator__view .view__amount .total__price,
+.main__calculator .calculator__view .view__total .amount__price,
+.main__calculator .calculator__view .view__total .total__price {
+  font-size: 30px;
+  color: hsl(172deg, 67%, 45%);
+}
+.main__calculator .calculator__view .view__reset {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Space Mono", monospace;
+  color: hsl(183deg, 100%, 15%);
+  background-color: hsl(172deg, 67%, 45%);
+  transition: 0.3s;
+}
+.main__calculator .calculator__view .view__reset:hover {
+  background-color: hsl(185deg, 41%, 84%);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 800px) {
+  main {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main__calculator {
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 3rem;
+  }
+  .main__calculator .calculator__header {
+    grid-area: 1/1/2/1;
+    margin: 0;
+  }
+  .main__calculator .calculator__tips {
+    grid-area: 2/1/3/1;
+    margin: 0;
+  }
+  .main__calculator .calculator__people {
+    grid-area: 3/1/4/1;
+    margin: 0;
+  }
+  .main__calculator .calculator__view {
+    grid-area: 1/2/4/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3rem 2rem;
+  }
+  .main__calculator .calculator__view .view__amount .amount__title,
+.main__calculator .calculator__view .view__amount .total__title,
+.main__calculator .calculator__view .view__total .amount__title,
+.main__calculator .calculator__view .view__total .total__title {
+    font-size: 18px;
+  }
+  .main__calculator .calculator__view .view__amount .amount__title .title__person,
+.main__calculator .calculator__view .view__amount .total__title .title__person,
+.main__calculator .calculator__view .view__total .amount__title .title__person,
+.main__calculator .calculator__view .view__total .total__title .title__person {
+    font-size: 16px;
+  }
+  .main__calculator .calculator__view .view__amount .amount__price,
+.main__calculator .calculator__view .view__amount .total__price,
+.main__calculator .calculator__view .view__total .amount__price,
+.main__calculator .calculator__view .view__total .total__price {
+    font-size: 32px;
+  }
+}/*# sourceMappingURL=style.css.map */
