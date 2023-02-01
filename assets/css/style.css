@@ -32,11 +32,19 @@ body {
 }
 .main__calculator .calculator__header {
   margin-bottom: 2rem;
+  position: relative;
 }
 .main__calculator .calculator__header .header__title {
   font-size: 16px;
   color: hsl(186deg, 14%, 43%);
   margin-bottom: 0.3rem;
+}
+.main__calculator .calculator__header .erroHeader {
+  font-size: 12px;
+  color: hsl(0deg, 59%, 59%);
+  position: absolute;
+  right: 0;
+  top: 5px;
 }
 .main__calculator .calculator__header .header__inputBill {
   background: url("../img/icon-dollar.svg") no-repeat center left 15px, hsl(180deg, 7%, 94%);
@@ -139,11 +147,19 @@ body {
 }
 .main__calculator .calculator__people {
   margin-bottom: 2rem;
+  position: relative;
 }
 .main__calculator .calculator__people .people__title {
   color: hsl(186deg, 14%, 43%);
   font-size: 16px;
   margin-bottom: 0.5rem;
+}
+.main__calculator .calculator__people .erroPeople {
+  font-size: 12px;
+  color: hsl(0deg, 59%, 59%);
+  position: absolute;
+  right: 0;
+  top: 5px;
 }
 .main__calculator .calculator__people .people__input {
   background: url("../img/icon-person.svg") no-repeat center left 15px, hsl(180deg, 7%, 94%);

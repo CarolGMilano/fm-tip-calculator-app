@@ -8,11 +8,20 @@
 
     .calculator__header {
         margin-bottom: 2rem;
+        position: relative;
 
         .header__title {
             font-size: 16px;
             color: $dark-grayish-cyan;
             margin-bottom: .3rem;
+        }
+
+        .erroHeader {
+            font-size: 12px;
+            color: $red-erro;
+            position: absolute;
+            right: 0;
+            top: 5px;
         }
 
         .header__inputBill {
@@ -112,11 +121,20 @@
 
     .calculator__people { 
         margin-bottom: 2rem;
+        position: relative;
 
         .people__title {
             color: $dark-grayish-cyan;
             font-size: 16px;
             margin-bottom: .5rem;
+        }
+
+        .erroPeople {
+            font-size: 12px;
+            color: $red-erro;
+            position: absolute;
+            right: 0;
+            top: 5px;
         }
 
         .people__input {

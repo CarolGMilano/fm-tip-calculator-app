@@ -24,40 +24,41 @@
                     <h2 class="header__title">Bill</h2>
 
                     <label for="input-bill"></label>
-                    <input type="number" id="input-bill" class="header__inputBill" placeholder="0">
+                    <input type="number" id="input-bill" class="header__inputBill" placeholder="0" data-bill>
                 </div>
 
                 <div class="calculator__tips">
                     <h3 class="tips__title">Select Tip %</h3>
 
                     <div class="tips__percent">
-                        <label for="input-checkbox5" class="percent__label-check">5%</label>
-                        <input type="checkbox" id="input-checkbox5" class="percent__checkbox">
+                        <label for="input-checkbox5" class="percent__label-check" data-labelCheck>5%</label>
+                        <input type="radio" name="tips" id="input-checkbox5" class="percent__checkbox" data-tips value="0.05">
 
-                        <label for="input-checkbox10" class="percent__label-check">10%</label>
-                        <input type="checkbox" id="input-checkbox10" class="percent__checkbox">
+                        <label for="input-checkbox10" class="percent__label-check" data-labelCheck>10%</label>
+                        <input type="radio" name="tips" id="input-checkbox10" class="percent__checkbox" data-tips value="0.10">
 
-                        <label for="input-checkbox15" class="percent__label-check">15%</label>
-                        <input type="checkbox" id="input-checkbox15" class="percent__checkbox">
+                        <label for="input-checkbox15" class="percent__label-check" data-labelCheck>15%</label>
+                        <input type="radio" name="tips"id="input-checkbox15" class="percent__checkbox" data-tips value="0.15">
 
-                        <label for="input-checkbox25" class="percent__label-check">25%</label>
-                        <input type="checkbox" id="input-checkbox25" class="percent__checkbox">
+                        <label for="input-checkbox25" class="percent__label-check" data-labelCheck>25%</label>
+                        <input type="radio" name="tips" id="input-checkbox25"  class="percent__checkbox" data-tips value="0.25">
 
-                        <label for="input-checkbox50" class="percent__label-check">50%</label>
-                        <input type="checkbox" id="input-checkbox50" class="percent__checkbox">
+                        <label for="input-checkbox50" class="percent__label-check" data-labelCheck>50%</label>
+                        <input type="radio" name="tips"
+                        id="input-checkbox50"  class="percent__checkbox" data-tips value="0.50">
 
                         <label for="input-custom" style="display: none;"></label>
-                        <input type="number" id="input-custom" class="percent__custom" placeholder="Custom">
+                        <input type="number" id="input-custom" class="percent__custom" placeholder="Custom" data-tipsCustom>
                     </div>
                 </div>
 
                 <div class="calculator__people">
                     <h3 class="people__title">Number of People</h3>
 
-                    <!-- <span class="erro">Can't be zero</span> -->
+                    <span class="erroPeople erro" style="display: none;" data-erro>Can't be zero</span>
 
                     <label for="input-people"></label>
-                    <input type="number" id="input-people" class="people__input" placeholder="0">
+                    <input type="number" id="input-people" class="people__input" placeholder="0" data-people>
                 </div>
 
                 <div class="calculator__view">
@@ -69,15 +70,15 @@
     
                         <div class="view__total">
                             <p class="total__title">Total<span class="title__person">/ person</span></p>
-                            <h4 class="total__price">$<span data-total>0.00</span></h4>
+                            <h4 class="total__price">$<span data-tipTotal>0.00</span></h4>
                         </div>
                     </div>
 
-                    <button class="view__reset">Reset</button>
+                    <button class="view__reset" type="reset" data-reset>Reset</button>
                 </div>
             </section>
         </main>
 
-        <script src="main.js" type="module"></script>
+        <script src="assets/js/main.js" type="module"></script>
     </body>
 </html>
